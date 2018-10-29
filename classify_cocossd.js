@@ -1,6 +1,6 @@
 var cv = require('opencv4nodejs');
 var { net } = require('./load_cocossd');
-var classNames = require('./CocoClassNames');
+var classNames = require('./CocoClassNames.json');
 
 const classifyImg = (img) => {
   const white = new cv.Vec(255, 255, 255);
@@ -20,7 +20,7 @@ const classifyImg = (img) => {
   const results = Array(outputBlob.rows).fill(0)
     .map((res, i) => {
       //const className = outputBlob.at(i, 1);
-	  const className = classNames[outputBlob.at(i, 1)];
+	  const className = classNames[outputBlob.at(i, 1)].Eng;
       const confidence = outputBlob.at(i, 2);
       const topLeft = new cv.Point(
         outputBlob.at(i, 3) * img.cols,
