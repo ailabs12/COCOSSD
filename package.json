@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/ailabs12/COCOSSD/issues"
   },
-  "homepage": "https://github.com/ailabs12/COCOSSD#readme"
+  "homepage": "https://github.com/ailabs12/COCOSSD#readme",
   "dependencies": {
     "opencv4nodejs": "latest",
     "path": "latest",
