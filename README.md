@@ -1,6 +1,6 @@
 # Object detector
 ## Использование:
-const { classifyImg } = require('./classify_cocossd');
+const { classifyImg } = require('object_detector_cocossd');
 
 classifyImg(base64 код изображения);
 
