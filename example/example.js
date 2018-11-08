@@ -1,5 +1,5 @@
 var cv = require('opencv4nodejs');
-var { classifyImg } = require('./classify_cocossd');
+var { classifyImg } = require('../object_detector_cocossd');
 
 
 //------------------------ДЛЯ ПРИМЕРА------------------------------
