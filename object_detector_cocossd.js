@@ -9,7 +9,7 @@ const classifyImg = (imageBase64) => {
   if (!imageBase64)
     	throw 'Do specify an image in base64 format'
 
-	imageBase64 = imageBase64.replace('data:image/jpeg;base64','')
+  imageBase64 = imageBase64.replace('data:image/jpeg;base64','')
 														.replace('data:image/png;base64','');
 
   const buffer = Buffer.from(imageBase64,'base64'); // записываем закодированную картинку в буфер

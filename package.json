@@ -4,6 +4,7 @@
   "description": "const { classifyImg } = require('object_detector_cocossd');",
   "main": "object_detector_cocossd.js",
   "scripts": {
+    "start": "./example/example",
     "install": "./install-script.sh"
   },
   "repository": {
@@ -18,6 +19,10 @@
   "homepage": "https://github.com/ailabs12/object_detector_cocossd#readme",
   "dependencies": {
     "fs": "0.0.1-security",
-    "path": "^0.12.7"
+    "path": "0.12.7",
+    "opencv4nodejs": "4.10.0"
+  },
+  "directories": {
+    "example": "example"
   }
 }
