@@ -16,6 +16,6 @@ const base64data =  cv.imencode('.jpg', img).toString('base64'); // Выполн
 //const buffer = Buffer.from(base64data,'base64'); // записываем закодированную картинку в буфер
 //const image = cv.imdecode(buffer); //Картинка сейчас представлена как Mat
 
-//console.log(classifyImg(image));
+console.log(classifyImg(base64data)[0]); //Объекты
 
-console.log(classifyImg(base64data));
+console.log(classifyImg(base64data)[1]); //Лица
