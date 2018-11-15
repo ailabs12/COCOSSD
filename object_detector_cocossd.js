@@ -8,7 +8,7 @@ var classNames = require('./CocoClassNames.json');
 //Принимает флаг(присутствие/отсутствие людей на картинке), картинку Mat и эту же картинку Mat 300x300
 const detectFaces = (SendToFaces, img, imgResized) => {
 
-  if (!SendToFaces) return;
+  if (!SendToFaces) return null;
 
   // network accepts blobs as input
   const inputBlob = cv.blobFromImage(imgResized);
