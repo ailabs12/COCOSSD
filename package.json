@@ -5,7 +5,7 @@
   "main": "object_detector_cocossd.js",
   "scripts": {
     "start": "./example/example",
-    "install": "./install-script.sh"
+    "postinstall": "bash install-script.sh"
   },
   "repository": {
     "type": "git",
