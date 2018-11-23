@@ -1,4 +1,3 @@
-console.log('!!! load cocossd.js');
 var cv = require('opencv4nodejs');
 var path = require('path');
 var fs = require('fs');
