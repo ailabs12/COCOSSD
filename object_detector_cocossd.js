@@ -77,6 +77,7 @@ const classifyImg = (imageBase64) => {
   const Objects = Array(outputBlob.rows).fill(0)
     .map((res, i) => {
       //const className = outputBlob.at(i, 1);
+	  if (outputBlob.at(i, 2) == 0) { return null; }
 	  const className = classNames[outputBlob.at(i, 1)].Rus; //.Eng for English mode
       if (!SendToFaces) {
       	SendToFaces = (className == "person" || className == "человек") ? true : false;
