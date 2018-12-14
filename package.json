@@ -4,7 +4,7 @@
   "description": "const { classifyImg } = require('object_detector_cocossd');",
   "main": "object_detector_cocossd.js",
   "scripts": {
-    "start": "./example/example",
+    "start": "cd example && node example",
     "postinstall": "bash install-script.sh"
   },
   "repository": {
