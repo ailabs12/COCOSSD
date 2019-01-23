@@ -1,4 +1,4 @@
-# Детектор объектов и лиц
+# Детектор объектов и лиц на базе модели COCO SSD
 ## Использование:
 const { classifyImg } = require('object_detector_cocossd');
 
